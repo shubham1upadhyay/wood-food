@@ -56,10 +56,10 @@
 /* main content styling */
 .main-content{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .left-box{
     width: 45%;
@@ -155,15 +155,39 @@ li{
     filter: blur(0px);
 }
 .order-status{
-    margin: 20px;
+    margin: 60px 20px;
+}
+.order-status span{
+    color:green;
+    font-weight: bolder;
 }
 .payment-status{
-    margin:10px;
+    margin:60px 10px;
+
 }
-
-
-
-
+.not-done{
+    color:red;
+}
+.done{
+    color:green;
+}
+.thankyou-msg{
+    margin-top: 50px;
+    font-size: 24px;
+    color:orangered;
+    font-weight: bolder;
+}
+#orderDetails li{
+  font-size:20px;
+  color:blue;
+}
+.heart{
+    color:red;
+    font-size: 80px;
+}
+.location-img{
+    width:100%;
+}
 
 
 
@@ -175,44 +199,82 @@ li{
         display: none;
 }
 .owner{
-    margin:0px;
-    font-size:6px;
+    margin: 0px;
+    font-size:18px;
+    width: 200%;
+    margin-left: -50px;
 }
-.left-box{
-    display: none;
+.left-box h5{
+    margin-left: -80px;
+    width: 200%;
+    font-size: 16px;
 }
-.btn-grp2 i{
-     margin:0px;
-     width:50px;
-    font-size: 20px; 
+.btn-grp{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    margin-top: 20px;
+}
+.btn-grp2{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
 }
 .right-box img{
-    width:400px;
+    width:140%;
     margin: 0px;
     padding: 0px;
-    margin-left: -40px;
+    /* margin-left: -40px */
 }
 .navbar h4{
-      margin-left: 0px;
+      margin-left: 10px;
 }
 .navbar button.toggle-btn{
     display: block;
 }
-.navbar button{
-    margin-right: 0px;
-}
-.navbar.responsive .navbar-left, .navbar.responsive .navbar-right {
+.navbar.responsive .navbar-left, .navbar i, .navbar.responsive{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items:center;
+    /* width:00px; */
+    margin-left: 10px;
+    padding: 0px;
+    font-size: 30px;
+    gap: 30px;
+}
+.navbar-left button{
+    /* width:80px; */
+    font-size: 20px;
+}
+.navbar-right button{
+    display: none;
 }
 .navbar.responsive .navbar-left button, .navbar.responsive .navbar-right button {
-    margin: 5px 0;
+    margin: 0px 0px;
 }
 .left-box h1{
     color: blue;
     font-size: 20px;
     margin: 20px 0px;
+}
+.thankyou-msg{
+    margin-top: 10px;
+    font-size: 16px;
+    color:orangered;
+    font-weight: bolder;
+}
+#orderDetails li{
+  font-size:15px;
+  color:blue;
+}
+.order-status{
+    margin: 20px 10px;
+    font-size: 16px;
+}
+.payment-status{
+    margin:20px 10px;
+    font-size: 16px;
+
 }
 }
   

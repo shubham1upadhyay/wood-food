@@ -92,7 +92,16 @@ function showMenu(items){
   }
   
   function thankyou() {
+      // alert('Thank you, Hope you enjoyed your food !');
+      const thankYou  = document.getElementById("thank-you");
       
+      const thanks = `
+     
+      <h5 class="thankyou-msg">Thank you for being our valued customer !</h5>
+      <i class="fa fa-heart heart"></i>
+      `;
+
+      thankYou.innerHTML = thanks;
   }
   
   async function takeOrder() {
@@ -105,7 +114,7 @@ function showMenu(items){
       const paymentBoard = `
 
       <h5 class="order-status">Order Status : <span>${prepStatus.orderDetails}</span></h5>
-      <h3 class="payment-status">Payment Status : <span>${prepStatus.paid}</span></h3>
+      <h3 class="payment-status">Payment Status : <span class="not-done">${prepStatus.paid}</span></h3>
       `;
         
       paymentStatus.innerHTML = paymentBoard;
@@ -124,14 +133,14 @@ function showMenu(items){
     try {
       const payment = await payOrder();
       const paymentStatus = document.getElementById('payment-status');
-      const orderComfirmationMOdal = document.getElementById("orderComfirmationMOdal");
+      // const orderComfirmationMOdal = document.getElementById("orderComfirmationMOdal");
 
       // paymentStatus.textContent = `Order Status: ${payment.orderDetails}, Paid: ${payment.paid}`;
   
       const paymentBoard = `
 
       <h4 class="order-status">Order Status : <span> ${payment.orderDetails}</span></h4>
-      <h2 class="payment-status">Payment Status : <span>${payment.paid}</span></h2>
+      <h2 class="payment-status">Payment Status : <span class="done">${payment.paid}</span></h2>
       `;
         
       paymentStatus.innerHTML = paymentBoard;
@@ -148,7 +157,10 @@ function showMenu(items){
     }
   }
 
-
+function placeNewOrder ()
+{
+  //
+}
 
   // Fetch the menu on page load
   fetchMenu();
