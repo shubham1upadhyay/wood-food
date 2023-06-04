@@ -186,6 +186,12 @@ li{
      width:50px;
     font-size: 20px; 
 }
+.right-box img{
+    width:400px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: -40px;
+}
 .navbar h4{
       margin-left: 0px;
 }
