@@ -56,8 +56,8 @@
 /* main content styling */
 .main-content{
     display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-around;
 }
@@ -197,6 +197,13 @@ li{
 @media screen and (max-width: 768px){
     .navbar-left, .navbar-right{
         display: none;
+}
+.main-content{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .owner{
     margin: 0px;
