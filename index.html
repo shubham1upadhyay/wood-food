@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png?" type="image/x-icon">
+    <link rel="stylesheet" href="makeup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3a3c63e6ee.js" crossorigin="anonymous"></script>
+    <title>Wood-Food</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <h4>Wood<span>Food</span></h4>
+        <div class="navbar-left">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#menuModal"><i class="fa fa-book"></i> Menu</button>
+          <button><i class="fa fa-car"></i> Delivery</button>
+          <button><i class="fa fa-phone"></i> Contact</button>
+        </div>
+        <div class="navbar-right">
+          <button><i class="fa fa-facebook"></i></button>
+          <button><i class="fa fa-instagram"></i></button>
+        </div>
+        <button class="toggle-btn">&#9776;</button>
+      </nav>
+
+<!-- main  content -->
+
+      <div class="main-content">
+
+        <!-- left side -->
+        <div class="left-box">
+            <!-- heading -->
+            <h1>Spring in<br/><span>WoodFood</span></h1>
+            <p class="owner">-powered by:Shubham Upadhyay</p>
+            <h5>The most delicious outdoor food</h5>
+           
+            <div class="btn-grp">
+            <button class="btn mx-3 btn-lg btn-outline-dark">Capacity</button>
+            <button class="btn mx-3 btn-lg btn-outline-dark">Location</button>
+            <button class="btn mx-3 btn-lg btn-outline-dark">Seat type</button>
+            </div>
+
+            <div class="btn-grp2">
+                <button class="btn"><i class="fa fa-edit"></i></button>
+                <button class="btn"><i class="fa fa-whatsapp"></i></button>
+            </div>
+        
+        </div>
+
+        <!-- right side -->
+        <div class="right-box">
+            <img src="b724b8eb2d268e7d190b3353e1bdd802.gif" alt="">
+        </div>
+      </div>
+
+    
+
+      <!-- menu modal -->
+<!-- Modal -->
+<div class="modal fade" id="menuModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body" id="menu">
+          <!-- menu items will be added here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button onclick="placeOrder()" type="button" class="btn btn-outline-success">Place Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
